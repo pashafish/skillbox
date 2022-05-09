@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кастомные элементы</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="plugin/choices/choices.min.css">
+  <link rel="stylesheet" href="plugin/simplebar/simplebar.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="section">
+      <div class="container">
+        <div class="check">
+          <fillset class="check__fillset">
+            <legend class="check__legend">Категории:</legend>
+            <ul class="check__list">
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Динозавры" class="check__checkbox">
+                  <span>Динозавры</span>
+                </label>
+              </li>
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Медведи" class="check__checkbox">
+                  <span>Медведи</span>
+                </label>
+              </li>
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Косули" class="check__checkbox">
+                  <span>Косули</span>
+                </label>
+              </li>
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Лисы" class="check__checkbox">
+                  <span>Лисы</span>
+                </label>
+              </li>
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Волки" class="check__checkbox">
+                  <span>Волки</span>
+                </label>
+              </li>
+              <li class="check__list-item">
+                <label class="check__label">
+                  <input type="checkbox" name="Олени и лоси" class="check__checkbox">
+                  <span>Олени и&nbsp;лоси</span>
+                </label>
+              </li>
+            </ul>
+          </fillset>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <select name="Материал" class="select">
+          <option placeholder>Материал</option>
+          <option value="Древесина">Древесина</option>
+          <option value="Металл">Металл</option>
+          <option value="Камень">Камень</option>
+          <option value="Пластик">Пластик</option>
+          <option value="Композитный">Композитный</option>
+          <option value="Гипс">Гипс</option>
+        </select>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="map" id="map"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="scroll__box" data-simplebar>
+          <p class="scroll__content">Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для первоочередных требований.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <form class="form" action="">
+          <div class="form__input-wrapper">
+            <span class='form__error-msg'></span>
+            <input class="form__input" type="text" name="Имя" placeholder="Имя*" maxlength="50" required>
+          </div>
+          <div class="form__input-wrapper">
+            <span class='form__error-msg'></span>
+            <input class="form__input" type="tel" name="Телефон" placeholder="Телефон*" required>
+          </div>
+          <div class="form__input-wrapper">
+            <span class='form__error-msg'></span>
+            <input class="form__input" type="email" name="E-mail" placeholder="E-mail*" maxlength="100" required>
+          </div>
+          <button class="btn-reset form__btn">Заказать</button>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="tooltip-wrapper">
+          <p class="tooltip-text">
+            Следует отметить, что социально&#8209;экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+            <span class="tooltip__button" tabindex="0">
+              <span class="tooltip">Глава&nbsp;2, страница 176</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"/>
+              </svg>
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="plugin/choices/choices.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="plugin/simplebar/simplebar.min.js"></script>
+  <script src="plugin/inputmask/inputmask.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>
