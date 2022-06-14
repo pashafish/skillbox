@@ -21,27 +21,36 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__wrapper">
-        <a href="/" class="head__logo">
-          <img src="img/logo.svg" alt="Логотип Skillbox" class="img header__logo-img">
-        </a>
-        <nav class="header__nav">
-          <ul class="list-reset header__list">
-            <li class="header__list-item">
-              <a href="/" class="header__list-link">Главная</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#advantages" class="header__list-link">О&nbsp;нас</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#teachers" class="header__list-link">Преподаватели</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#courses" class="header__list-link">Курсы</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn-reset header__burger"></button>
+      <div class="row align-items-center header__row">
+        <div class="col-auto col-sm-12 col-md header__col-logo">
+          <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="Логотип Skillbox" class="img header__logo-img">
+          </a>
+        </div>
+        <div class="col">
+          <nav class="header__nav">
+            <div class="header__nav-close">
+              <button class="btn-reset header__nav-close-btn"></button>
+            </div>
+            <ul class="list-reset header__list">
+              <li class="header__list-item">
+                <a href="/" class="header__list-link">Главная</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#advantages" class="header__list-link">О&nbsp;нас</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#teachers" class="header__list-link">Преподаватели</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#courses" class="header__list-link">Курсы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-auto header__col-burger">
+          <button class="btn-reset header__burger"></button>
+        </div>
       </div>
     </div>
   </header>
@@ -50,18 +59,14 @@
     <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
-          <div class="hero__content">
-            <h1 class="hero__title">Курсы 3D моделирования</h1>
-            <p class="hero__paragraph">
-              Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не&nbsp;следует, однако, забывать.
-            </p>
-            <button class="btn-reset hero__btn">Выбрать курс</button>
-          </div>
-          <div class="hero__image">
-            <picture>
-              <source srcset="img/hero.png" media="(min-width: 992px)">
-              <img class="img hero__img" src="img/hero-md.png" alt="" aria-hidden="true">
-            </picture>
+          <div class="row">
+            <div class="col-12 col-sm-9 col-md-7">
+              <h1 class="hero__title">Курсы 3D моделирования</h1>
+              <p class="hero__paragraph">
+                Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не&nbsp;следует, однако, забывать.
+              </p>
+              <button class="btn-reset hero__btn">Выбрать курс</button>
+            </div>
           </div>
         </div>
       </div>
@@ -240,7 +245,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container-fluid footer__container">
       <ul class="list-reset footer__socials">
         <li class="footer__social">
@@ -269,5 +274,31 @@
       </div>
     </div>
   </footer>
+  <script>
+    let hCloseBtn = document.querySelector('.header__nav-close-btn');
+    let hBurgerBtn = document.querySelector('.header__burger');
+    let hNav = document.querySelector('.header__nav');
+    let hNavLink = document.querySelectorAll('.header__list-link');
+    hBurgerBtn.addEventListener('click', function() {
+      hNav.classList.add('header__nav--active');
+      document.body.classList.add('stop-scroll');
+    });
+    hCloseBtn.addEventListener('click', function() {
+      hNav.classList.remove('header__nav--active');
+      document.body.classList.remove('stop-scroll');
+    });
+    document.addEventListener('click',(e) => {
+      if((!e.composedPath().includes(hNav)) && (!e.composedPath().includes(hBurgerBtn))) {
+        hNav.classList.remove('header__nav--active');
+        document.body.classList.remove('stop-scroll');
+      }
+    });
+    hNavLink.forEach(el => {
+      el.addEventListener('click', function() {
+        hNav.classList.remove('header__nav--active');
+        document.body.classList.remove('stop-scroll');
+      });
+    });
+  </script>
 </body>
 </html>
