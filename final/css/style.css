@@ -1180,10 +1180,10 @@ picture {
   flex-shrink: 0;
 }
 .header__burger {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  top: var(--gutter-y);
+  top: 0;
   left: 0;
   z-index: 1000;
   display: none;
