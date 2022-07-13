@@ -546,6 +546,9 @@ smoothLinks.forEach(el => {
       return false;
     }
     if(scrollToElement !== null) {
+      if(typeof el.closest('.header__burger')) {
+        headerBurger.classList.add('pre-hidden');
+      }
       scrollToElement.scrollIntoView({behavior:"smooth", block:"start"});
     }
   }, {passive: false});
