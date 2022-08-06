@@ -670,3 +670,84 @@ headerBurger.addEventListener('transitionend', (e) => {
     }
   }
 });
+
+/* Audio Player */
+let audioPlayer = new Audio();
+audioPlayer.loop = false;
+let currentTrackID = null;
+let currentTrackState = 'pause';
+let audioPlayerBtns = document.querySelectorAll('.audio-player-btn');
+audioPlayerBtns.forEach(el => {
+  el.addEventListener('click', playerFunc.bind(this));
+});
+audioPlayerBtns.forEach(el => {
+  el.addEventListener('keyup', (e) => {
+    if(e.key === "Enter") playerFunc(e);
+  });
+});
+let heroBtn = document.querySelector('.hero__btn');
+heroBtn.addEventListener('click', () => {
+  document.querySelector('#live-btn').click();
+});
+
+function playerFunc(e) {
+  let targetBtn;
+  audioPlayerBtns.forEach(el => {
+    if(e.composedPath().includes(el)) targetBtn = el;
+  })
+  if(targetBtn) {
+    let trackID = targetBtn.getAttribute('data-track-id');
+    if(trackID === currentTrackID) {
+      if(currentTrackState === 'pause') {
+        audioPlayer.play();
+        currentTrackState = 'play';
+        targetBtn.classList.add('audio-player-btn--pause');
+      }
+      else if(currentTrackState === 'play') {
+        audioPlayer.pause();
+        currentTrackState = 'pause';
+        targetBtn.classList.remove('audio-player-btn--pause');
+      }
+    }
+    else {
+      let previousBtn = document.querySelector('.audio-player-btn--pause');
+      if (previousBtn) {
+        previousBtn.classList.remove('audio-player-btn--pause');
+        previousBtn.removeAttribute('style');
+      }
+      currentTrackID = trackID;
+      audioPlayer.pause();
+      audioPlayer.src = `tracks/${trackID}.mp3`;
+      audioPlayer.play();
+      currentTrackState = 'play';
+      targetBtn.classList.add('audio-player-btn--pause');
+    }
+  }
+}
+
+let trackDuration = 0;
+let trackCurrentTime = 0;
+let trackProgress = 0;
+let currentAudioPlayerBtn = null;
+let progressAnimation = null;
+audioPlayer.addEventListener('play', () => {
+  currentAudioPlayerBtn = document.querySelector('.audio-player-btn--pause');
+  progressAnimation = requestAnimationFrame(audioStep);
+});
+audioPlayer.addEventListener('ended', () => {
+  currentAudioPlayerBtn.classList.remove('audio-player-btn--pause');
+  currentAudioPlayerBtn.removeAttribute('style');
+  cancelAnimationFrame(progressAnimation);
+  currentAudioPlayerBtn = null;
+  currentTrackID = null;
+  currentTrackState = 'pause';
+});
+function audioStep(timestamp) {
+  trackDuration = audioPlayer.duration;
+  trackCurrentTime = audioPlayer.currentTime;
+  trackProgress = (trackDuration > 0) ? trackCurrentTime / trackDuration : 0;
+  currentAudioPlayerBtn.setAttribute('style', `--audio-progress:${trackProgress}`);
+  if(!audioPlayer.ended) {
+    progressAnimation = requestAnimationFrame(audioStep);
+  }
+}

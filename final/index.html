@@ -126,7 +126,7 @@
               </div>
               <div class="details-body header__players padding-10 hidden" id="header__tab-1" role="tabpanel" aria-labelledby="header__tab-header-1" aria-hidden="true">
                 <div class="header__player">
-                  <button class="btn-reset header__player-btn header__player-btn--pause" aria-label="Воспроизвести: Музыка">
+                  <button class="btn-reset header__player-btn audio-player-btn" aria-label="Воспроизвести: Музыка" data-track-id="abbd25f14d141ffcd9796a97be25517d">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 5.5V14.5L14 10L8 5.5Z"/>
                     </svg>
@@ -141,7 +141,7 @@
                   </div>
                 </div>
                 <div class="header__player">
-                  <button class="btn-reset header__player-btn" aria-label="Воспроизвести: Как так?">
+                  <button id="live-btn" class="btn-reset header__player-btn audio-player-btn" aria-label="Воспроизвести: Как так?" data-track-id="f4353c379f968488c55d43fff0e2e66d">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 5.5V14.5L14 10L8 5.5Z"/>
                     </svg>
@@ -261,7 +261,7 @@
                     <h3 class="podcast__title">Европа. XIX век</h3>
                     <span class="podcast__artist">Дмитрий Гутенберг</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn podcast__play-btn--pause" aria-label="Воспроизвести: Европа. XIX век - Дмитрий Гутенберг">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="3a8b906f62df1383647e501b8c9f1091" aria-label="Воспроизвести: Европа. XIX век - Дмитрий Гутенберг">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -310,7 +310,7 @@
                     <h3 class="podcast__title">О музыке</h3>
                     <span class="podcast__artist">Дмитрий Гутенберг</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: О музыке - Дмитрий Гутенберг">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="f1b8ef8f246493046843aa920c9e2064" aria-label="Воспроизвести: О музыке - Дмитрий Гутенберг">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -359,7 +359,7 @@
                     <h3 class="podcast__title">Люди сегодня</h3>
                     <span class="podcast__artist">Анна Васильева</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Люди сегодня - Анна Васильева">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="ff041dc1a44fe3e844e454b7cbfbbb98" aria-label="Воспроизвести: Люди сегодня - Анна Васильева">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -408,7 +408,7 @@
                     <h3 class="podcast__title">Хэллоу, Африка!</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Хэллоу, Африка! - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="ee8cd707bbefeef7d442c1e8b94b0b06" aria-label="Воспроизвести: Хэллоу, Африка! - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -457,7 +457,7 @@
                     <h3 class="podcast__title">Обо всём</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Обо всём - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="dcb9ced053266bb08b46947f8e759f17" aria-label="Воспроизвести: Обо всём - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -506,7 +506,7 @@
                     <h3 class="podcast__title">Физика цвета</h3>
                     <span class="podcast__artist">Татьяна Флеганова</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Физика цвета - Татьяна Флеганова">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="c5ec648183b6aaeb478d3ff57d4f871b" aria-label="Воспроизвести: Физика цвета - Татьяна Флеганова">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -555,7 +555,7 @@
                     <h3 class="podcast__title">Источник звука</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Источник звука - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="811061408020df6fda69f06fea526bd7" aria-label="Воспроизвести: Источник звука - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -604,7 +604,7 @@
                     <h3 class="podcast__title">Правила этикета</h3>
                     <span class="podcast__artist">Татьяна Флеганова</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Правила этикета - Татьяна Флеганова">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="8b05117a9d7126f2e1003fe0308aeef8" aria-label="Воспроизвести: Правила этикета - Татьяна Флеганова">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -702,7 +702,7 @@
                     <h3 class="podcast__title">О музыке</h3>
                     <span class="podcast__artist">Дмитрий Гутенберг</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: О музыке - Дмитрий Гутенберг">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="128bf881dde534efd4ee5970bd00fa7e" aria-label="Воспроизвести: О музыке - Дмитрий Гутенберг">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -751,7 +751,7 @@
                     <h3 class="podcast__title">Люди сегодня</h3>
                     <span class="podcast__artist">Анна Васильева</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Люди сегодня - Анна Васильева">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="10a0bdfa5a8d3ddef94aa93d41fa762d" aria-label="Воспроизвести: Люди сегодня - Анна Васильева">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -800,7 +800,7 @@
                     <h3 class="podcast__title">Хэллоу, Африка!</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Хэллоу, Африка! - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="7cd125531f68b90109b154df47e0078c" aria-label="Воспроизвести: Хэллоу, Африка! - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -849,7 +849,7 @@
                     <h3 class="podcast__title">Обо всём</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Обо всём - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="033323efb4a4f9f7dc28e5224961556e" aria-label="Воспроизвести: Обо всём - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -898,7 +898,7 @@
                     <h3 class="podcast__title">Физика цвета</h3>
                     <span class="podcast__artist">Татьяна Флеганова</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Физика цвета - Татьяна Флеганова">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="667153b5b77bc439b267fbf909bf1ee5" aria-label="Воспроизвести: Физика цвета - Татьяна Флеганова">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -947,7 +947,7 @@
                     <h3 class="podcast__title">Источник звука</h3>
                     <span class="podcast__artist">Пётр Дмитриевский</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Источник звука - Пётр Дмитриевский">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="e971ecbbde9b447cc63340bad9c6e52f" aria-label="Воспроизвести: Источник звука - Пётр Дмитриевский">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -996,7 +996,7 @@
                     <h3 class="podcast__title">Правила этикета</h3>
                     <span class="podcast__artist">Татьяна Флеганова</span>
                   </div>
-                  <button class="btn-reset podcast__play-btn" aria-label="Воспроизвести: Правила этикета - Татьяна Флеганова">
+                  <button class="btn-reset podcast__play-btn audio-player-btn" data-track-id="b58ab48e49848ef1bb11a851e621c2ee" aria-label="Воспроизвести: Правила этикета - Татьяна Флеганова">
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
                     </svg>
@@ -2085,7 +2085,7 @@
           <div class="col-xl-8 col-lg-6 col-md-4 col-sm-2 playlists__col">
             <ul class="list-reset inner-row" data-genre="postpunk">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="8afde156ba54f089d8dfdedc90028495" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-ploho-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-ploho.jpg" alt="Обложка Ploho" class="img playlist__cover">
@@ -2098,14 +2098,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
+                <div class="playlist audio-player-btn" data-track-id="1c9429fd7eacf9ea69ff3b2c823f1c7e" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
                   <picture>
                     <source srcset="img/playlists/playlist-molchat-doma-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-molchat-doma.jpg" alt="Обложка Molchat Doma" class="img playlist__cover">
@@ -2118,14 +2122,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="bb5cbe2f2a8946defacb598a6d7e7cba" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-motorama-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-motorama.jpg" alt="Обложка Motorama" class="img playlist__cover">
@@ -2138,14 +2146,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="3e37d3b8f55f861c478f72e6e825665e" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -2158,14 +2170,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="7a776be25afffb3a9c1687514d8f3ee1" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -2178,14 +2194,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
+                <div class="playlist audio-player-btn" data-track-id="e09d4043d17aaadc8978622f22d04e83" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
                   <picture>
                     <source srcset="img/playlists/playlist-iulskie-dni-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-iulskie-dni.jpg" alt="Обложка Июльские Дни" class="img playlist__cover">
@@ -2198,14 +2218,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="5780180bb9d4be209aebd7265f80f9c2" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -2218,14 +2242,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="f4f47e91a658b9bb7cd82708a312de73" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -2238,14 +2266,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
+                <div class="playlist audio-player-btn" data-track-id="cbe2be512fe683da66d289d98df520c4" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
                   <picture>
                     <source srcset="img/playlists/playlist-the-smiths-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-smiths.jpg" alt="Обложка The Smiths" class="img playlist__cover">
@@ -2258,14 +2290,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
+                <div class="playlist audio-player-btn" data-track-id="71addd1c9a79df03ac4dafae43d5210c" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
                   <picture>
                     <source srcset="img/playlists/playlist-new-order-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-new-order.jpg" alt="Обложка New Order" class="img playlist__cover">
@@ -2278,14 +2314,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="e57c8909c015811bab17fa7ef21f46a8" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-bauhaus-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-bauhaus.jpg" alt="Обложка Bauhaus" class="img playlist__cover">
@@ -2298,14 +2338,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Gang Of Four - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="4ad49f5f55dcc33e81ef5287401b6635" role="button" tabindex="0" aria-label="Воспроизвести: Gang Of Four - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-gang-of-four-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-gang-of-four.jpg" alt="Обложка Gang Of Four" class="img playlist__cover">
@@ -2318,7 +2362,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2327,7 +2375,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="hardcore">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="34395671e9af27e2aedaacda2eef8b9d" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -2340,14 +2388,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="31516fc764f1245d2e436bd7d2ded16f" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -2360,14 +2412,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
+                <div class="playlist audio-player-btn" data-track-id="15b523e55dabe657d60db025e1f3ff3f" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
                   <picture>
                     <source srcset="img/playlists/playlist-the-smiths-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-smiths.jpg" alt="Обложка The Smiths" class="img playlist__cover">
@@ -2380,14 +2436,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
+                <div class="playlist audio-player-btn" data-track-id="d26bc41d0dcf04b959cb47ccb3aaff02" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
                   <picture>
                     <source srcset="img/playlists/playlist-new-order-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-new-order.jpg" alt="Обложка New Order" class="img playlist__cover">
@@ -2400,14 +2460,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="e59dc8f2385f190f99c4aa3e5f765489" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-bauhaus-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-bauhaus.jpg" alt="Обложка Bauhaus" class="img playlist__cover">
@@ -2420,14 +2484,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Gang Of Four - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="da9bdd96d5c2e17b98d8950321080221" role="button" tabindex="0" aria-label="Воспроизвести: Gang Of Four - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-gang-of-four-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-gang-of-four.jpg" alt="Обложка Gang Of Four" class="img playlist__cover">
@@ -2440,7 +2508,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2449,7 +2521,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="punkrock">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="c58cb12ddd27f38170a562d0a6bcaf38" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -2462,14 +2534,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="3bf7fea79a0c58dfdc78eff28c79ce26" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -2482,14 +2558,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
+                <div class="playlist audio-player-btn" data-track-id="5bb95002c8e867ad6a70bf4ae41ff9c5" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
                   <picture>
                     <source srcset="img/playlists/playlist-iulskie-dni-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-iulskie-dni.jpg" alt="Обложка Июльские Дни" class="img playlist__cover">
@@ -2502,14 +2582,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="8c103738da25670d1fcfa5d2668f0b80" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -2522,14 +2606,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="6c98b9d4fcc9872dfaf270f66013df06" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -2542,14 +2630,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
+                <div class="playlist audio-player-btn" data-track-id="03d92362f611ec181b272e53faed9a2d" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
                   <picture>
                     <source srcset="img/playlists/playlist-the-smiths-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-smiths.jpg" alt="Обложка The Smiths" class="img playlist__cover">
@@ -2562,7 +2654,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2571,7 +2667,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="rock">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="b0bd13082c738f394cc8ae893111840b" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-ploho-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-ploho.jpg" alt="Обложка Ploho" class="img playlist__cover">
@@ -2584,14 +2680,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
+                <div class="playlist audio-player-btn" data-track-id="f05c286b04a426aa717ba4aa5c8038b2" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
                   <picture>
                     <source srcset="img/playlists/playlist-molchat-doma-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-molchat-doma.jpg" alt="Обложка Molchat Doma" class="img playlist__cover">
@@ -2604,14 +2704,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="2a28207cde7567565a4f80abdb226210" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-motorama-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-motorama.jpg" alt="Обложка Motorama" class="img playlist__cover">
@@ -2624,14 +2728,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="663de58ec7b3bbe86ed097a172493b32" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -2644,14 +2752,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="583d5f97790995944b9c87e4a214343d" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -2664,7 +2776,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2673,7 +2789,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="progressiverock">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="bf5575e15eff7c984a71dfc8dd2f4649" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -2686,14 +2802,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
+                <div class="playlist audio-player-btn" data-track-id="ebfc7e1403cc29586e35d0b1b3cf5264" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
                   <picture>
                     <source srcset="img/playlists/playlist-iulskie-dni-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-iulskie-dni.jpg" alt="Обложка Июльские Дни" class="img playlist__cover">
@@ -2706,14 +2826,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="9ab56a34d4052f19ba16293f809dfb4a" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -2726,14 +2850,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="621c5a7ea38f7093858a5ba1d47635b2" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -2746,14 +2874,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
+                <div class="playlist audio-player-btn" data-track-id="81eace4e1b5f20c06a50928e49e135a4" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
                   <picture>
                     <source srcset="img/playlists/playlist-the-smiths-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-smiths.jpg" alt="Обложка The Smiths" class="img playlist__cover">
@@ -2766,14 +2898,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
+                <div class="playlist audio-player-btn" data-track-id="52917e8a93a3239967b3687185fffce1" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
                   <picture>
                     <source srcset="img/playlists/playlist-new-order-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-new-order.jpg" alt="Обложка New Order" class="img playlist__cover">
@@ -2786,7 +2922,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2795,7 +2935,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="electro">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="9aedd94abaf2834fe232f6b5d919cbaf" role="button" tabindex="0" aria-label="Воспроизвести: Ploho - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-ploho-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-ploho.jpg" alt="Обложка Ploho" class="img playlist__cover">
@@ -2808,14 +2948,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
+                <div class="playlist audio-player-btn" data-track-id="9741f6dee67b9482aef83979ba621b54" role="button" tabindex="0" aria-label="Воспроизвести: Molchat Doma - Все песни">
                   <picture>
                     <source srcset="img/playlists/playlist-molchat-doma-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-molchat-doma.jpg" alt="Обложка Molchat Doma" class="img playlist__cover">
@@ -2828,14 +2972,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="bfe57889f9079add92d9c09f2ab3ad1b" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-motorama-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-motorama.jpg" alt="Обложка Motorama" class="img playlist__cover">
@@ -2848,14 +2996,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="0ebac78f30f2642d8672c78536035dd8" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -2868,7 +3020,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -2877,7 +3033,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="classic">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="7f1327bb1f66c1187b67853dd7832aa0" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -2890,14 +3046,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="c4699073a1f8fc206be01b82edc57b7a" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -2910,14 +3070,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
+                <div class="playlist audio-player-btn" data-track-id="7ee9ab7e41cd588ffb579a773633abda" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
                   <picture>
                     <source srcset="img/playlists/playlist-iulskie-dni-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-iulskie-dni.jpg" alt="Обложка Июльские Дни" class="img playlist__cover">
@@ -2930,14 +3094,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="f1a24761d1aaa29adea190711a96b494" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -2950,14 +3118,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="c2bd37884c5190b00c1d35d62b4eaa5b" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -2970,14 +3142,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
+                <div class="playlist audio-player-btn" data-track-id="d8409196031dfa8d2920cafd91654525" role="button" tabindex="0" aria-label="Воспроизвести: The Smiths - Период 1984-1988">
                   <picture>
                     <source srcset="img/playlists/playlist-the-smiths-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-smiths.jpg" alt="Обложка The Smiths" class="img playlist__cover">
@@ -2990,14 +3166,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
+                <div class="playlist audio-player-btn" data-track-id="840ce82f0a9b5f9831e951e7e4420929" role="button" tabindex="0" aria-label="Воспроизвести: New Order - Хиты">
                   <picture>
                     <source srcset="img/playlists/playlist-new-order-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-new-order.jpg" alt="Обложка New Order" class="img playlist__cover">
@@ -3010,14 +3190,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="32ffe7c505402efc1e383065e078affb" role="button" tabindex="0" aria-label="Воспроизвести: Bauhaus - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-bauhaus-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-bauhaus.jpg" alt="Обложка Bauhaus" class="img playlist__cover">
@@ -3030,7 +3214,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
@@ -3039,7 +3227,7 @@
             </ul>
             <ul class="list-reset inner-row" data-genre="sounds">
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
+                <div class="playlist audio-player-btn" data-track-id="6c8fe3cd2994539a9feacffadacf3fc3" role="button" tabindex="0" aria-label="Воспроизвести: Motorama - Все синглы">
                   <picture>
                     <source srcset="img/playlists/playlist-motorama-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-motorama.jpg" alt="Обложка Motorama" class="img playlist__cover">
@@ -3052,14 +3240,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
+                <div class="playlist audio-player-btn" data-track-id="66d57f503dd9cfe691b9feabbbcf2012" role="button" tabindex="0" aria-label="Воспроизвести: Human Tetris - 3 последних альбома">
                   <picture>
                     <source srcset="img/playlists/playlist-human-tetris-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-human-tetris.jpg" alt="Обложка Human Tetris" class="img playlist__cover">
@@ -3072,14 +3264,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
+                <div class="playlist audio-player-btn" data-track-id="fbce8f7717d8d4d3e0fb37ab89bf6f7c" role="button" tabindex="0" aria-label="Воспроизвести: Буерак - Все EP">
                   <picture>
                     <source srcset="img/playlists/playlist-buerak-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-buerak.jpg" alt="Обложка Буерак" class="img playlist__cover">
@@ -3092,14 +3288,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
+                <div class="playlist audio-player-btn" data-track-id="d75797c65636fe4243d096c8619a8654" role="button" tabindex="0" aria-label="Воспроизвести: Июльские Дни - Альбом Колокол">
                   <picture>
                     <source srcset="img/playlists/playlist-iulskie-dni-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-iulskie-dni.jpg" alt="Обложка Июльские Дни" class="img playlist__cover">
@@ -3112,14 +3312,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="411d37ee1aed5dde08f9167d4bace718" role="button" tabindex="0" aria-label="Воспроизвести: Joy Division - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-joy-division-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-joy-division.jpg" alt="Обложка Joy Division" class="img playlist__cover">
@@ -3132,14 +3336,18 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
                 </div>
               </li>
               <li class="col-xl-3 col-lg-2 col-md-2 col-sm-1">
-                <div class="playlist" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
+                <div class="playlist audio-player-btn" data-track-id="11636f19813d96275701a4be168abdb7" role="button" tabindex="0" aria-label="Воспроизвести: The Cure - Лучшее за всё время">
                   <picture>
                     <source srcset="img/playlists/playlist-the-cure-sm.jpg" media="(max-width: 767.98px)">
                     <img src="img/playlists/playlist-the-cure.jpg" alt="Обложка The Cure" class="img playlist__cover">
@@ -3152,7 +3360,11 @@
                   <div class="playlist__shade">
                     <span class="playlist__play">
                       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z" fill="white"/>
+                        <path d="M18.6924 28.7965L28.5716 21.7996C29.1428 21.3998 29.1428 20.6002 28.5716 20.2004L18.6924 13.2035C17.9943 12.7037 17 13.1835 17 14.0031V27.9969C17 28.8165 17.9943 29.2963 18.6924 28.7965Z"/>
+                      </svg>
+                      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 13C18 12.4477 17.5523 12 17 12C16.4477 12 16 12.4477 16 13V29C16 29.5523 16.4477 30 17 30C17.5523 30 18 29.5523 18 29V13Z"/>
+                        <path d="M26 13C26 12.4477 25.5523 12 25 12C24.4477 12 24 12.4477 24 13V29C24 29.5523 24.4477 30 25 30C25.5523 30 26 29.5523 26 29V13Z"/>
                       </svg>
                     </span>
                   </div>
